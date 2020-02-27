@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/fyxiaoyaoFXY/grunt-demo#readme",
   "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-plugin-react": "^7.18.3",
     "grunt": "^1.0.4",
-    "grunt-htmlhint": "^0.9.13"
+    "grunt-eslint": "^22.0.0"
   }
 }

@@ -1,6 +1,4 @@
-/* global $:true */
-
-$(function(){
+ $(function(){
     //get dom elem
     var $width = $('#width'),
         $height = $('#height'),
@@ -14,10 +12,13 @@ $(function(){
             h = parseFloat($height.val());
         
         //calculate
-        var p = 2*(w + h),
-            a = w * h;
+        // var p = 2*(w + h),
+        //     a = w * h;
+
+        var rect =rectangle();
+
         //output
-        $perimeter.val(p);
-        $area.val(a);
+        $perimeter.val(rect.perimeter(w,h));
+        $area.val(rect.area(w,h));
     });
 });
